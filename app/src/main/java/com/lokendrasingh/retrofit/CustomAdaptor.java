@@ -1,12 +1,24 @@
 package com.lokendrasingh.retrofit;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class CustomAdaptor extends RecyclerView.Adapter<CustomAdaptor.CustomHolder> {
+
+    private List<RetroPhoto> datalist;
+    private Context context;
+
+    public CustomAdaptor(Context context, List<RetroPhoto> datalist) {
+        this.context = context;
+        this.datalist = datalist;
+
+    }
 
     @NonNull
     @Override

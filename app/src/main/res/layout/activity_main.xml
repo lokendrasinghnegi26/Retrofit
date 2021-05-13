@@ -12,7 +12,7 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="5dp"
         tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="262dp"
-        android:padding="5dp"/>
+        tools:layout_editor_absoluteY="262dp" />
 </LinearLayout>

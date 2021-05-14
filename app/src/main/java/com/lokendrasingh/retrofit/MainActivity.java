@@ -1,4 +1,4 @@
-package com.lokendrasingh.retrofit;
+    package com.lokendrasingh.retrofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -42,8 +42,7 @@ public class MainActivity extends AppCompatActivity {
     public void getdatalist(List<RetroPhoto> listofphoto) {
 
         cd = new CustomAdaptor(this, listofphoto);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
-        r.setLayoutManager(layoutManager);
+        r.setLayoutManager(new LinearLayoutManager(this));
         r.setAdapter(cd);
     }
 }
